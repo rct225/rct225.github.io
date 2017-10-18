@@ -1,0 +1,8 @@
+#whiteboard {
+  background-image: url("../images/Whiteboard_with_markers.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
