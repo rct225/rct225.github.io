@@ -21,7 +21,7 @@ h1 {
 h2 {
   font-family: 'Rock Salt', cursive;
   text-decoration: underline;
-  text-underline-position: below ;
+  text-underline-position: below;
 }
 
 #music {
@@ -39,4 +39,8 @@ li {
 
 #doggie img {
   width: 100%
+}
+
+#doggie h2 {
+  text-align: center;
 }
