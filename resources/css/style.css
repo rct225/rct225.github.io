@@ -1,3 +1,8 @@
+body {
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Rock Salt', cursive;
+}
+
 #whiteboard {
   background-image: url("../images/Whiteboard_with_markers.jpg");
   background-position: center center;
@@ -5,4 +10,33 @@
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #232D9C;
+}
+
+h2 {
+  font-family: 'Rock Salt', cursive;
+  text-decoration: underline;
+  text-underline-position: below ;
+}
+
+#music {
+  -webkit-transform: rotate(-15deg);
+   -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+     -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+}
+
+li {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2rem;
+}
+
+#doggie img {
+  width: 100%
 }
