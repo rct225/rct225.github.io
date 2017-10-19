@@ -44,3 +44,8 @@ li {
 #doggie h2 {
   text-align: center;
 }
+
+svg {
+  height: 3rem;
+  width: 3rem;
+}
