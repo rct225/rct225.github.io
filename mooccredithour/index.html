@@ -1,0 +1,134 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <form name="test-form">
+
+      <div>
+      	<label>Course Title</label>
+      	<input type="text" name="course_title" />
+      </div>
+      <div>
+      	<label>Platform</label>
+      	<input type="text" name="platform" />
+      </div>
+      <div>
+      	<label>University</label>
+      	<input type="text" name="university" />
+      </div>
+      <div>
+      	<label>Certificate Cost</label>
+      	<input type="text" name="cost" />
+      </div>
+      <div>
+      	<label>Total Minutes Video</label>
+      	<input type="text" name="video_minutes" />
+      </div>
+      <div>
+      	<label>Total Quant. Reading</label>
+      	<input type="text" name="reading_time" />
+      </div>
+      <div>
+      	<label>Est. Time to Complete</label>
+      	<input type="text" name="time_to_complete" />
+      </div>
+      <div>
+      	<label>Exercises: #, Type, ...</label>
+      	<input type="text" name="exercise" />
+      </div>
+      <div>
+      	<label>Link to Course</label>
+      	<input type="text" name="link" />
+      </div>
+      <div>
+      	<label>Student</label>
+      	<input type="text" name="student" />
+      </div>
+      <div>
+      	<label>Weeks of Student Investment</label>
+      	<input type="text" name="student_weeks" />
+      </div>
+      <div>
+      	<label>Hours Per Week</label>
+      	<input type="text" name="student_hours_weekly" />
+      </div>
+      <div>
+      	<label>Instructor Credentials</label>
+      	<input type="text" name="instructor_credentials" />
+      </div>
+      <div>
+      	<label>Types of Assessment</label>
+      	<input type="text" name="assessment_types" />
+      </div>
+      <div>
+      	<label>Number of Assesments</label>
+      	<input type="text" name="assessment_number" />
+      </div>
+      <div>
+      	<label>Proctoring format</label>
+      	<input type="text" name="proctoring_format" />
+      </div>
+      <div>
+      	<label>Amount ungraded assignments / practice problems</label>
+      	<input type="text" name="amount_practice_problems" />
+      </div>
+      <div>
+      	<label>Degree Intesity?</label>
+      	<input type="text" name="degree_intensity" />
+      </div>
+      <div>
+      	<label>Pre-requisites</label>
+      	<input type="text" name="prereqs" />
+      </div>
+      <div>
+      	<label>Student questions answered by instructor?</label>
+      	<input type="text" name="questions_answered_by_instructor" />
+      </div>
+      <div>
+      	<label>Course reviews?</label>
+      	<input type="text" name="course_reviews" />
+      </div>
+      <div>
+      	<label>Course Rating</label>
+      	<input type="text" name="course_rating" />
+      </div>
+      <div>
+      	<label>Tools to detect academic dishonesty</label>
+      	<input type="text" name="academic_dishonesty" />
+      </div>
+      <div>
+      	<label>Mechanism of tracking student engagement</label>
+      	<input type="text" name="student_engagement" />
+      </div>
+      <div>
+      	<label>Notes</label>
+      	<input type="text" name="notes" />
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script type="text/javascript">
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzz-4Me4Xjh4zBq6yhpVnRije99ZGrC_v5QB6VrfZLHAbZPloc/exec';
+      const form = document.forms['test-form'];
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
